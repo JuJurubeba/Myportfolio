@@ -4,8 +4,8 @@
         <div class="interface">
             <h2 class="titulo">Meu <span>portfolio</span></h2>
             <div class="flex">
-                <div class="img-port" >
-                    <div class="overlay">Projeto 1</div>
+                <div class="img-port1"  id="img-port1">
+                    <div class="overlay">Golang API</div>
                 </div>
                 <div class="img-port" >
                     <div class="overlay">Projeto 2</div>
@@ -25,6 +25,11 @@
     export default{
     
     }
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('img-port1').addEventListener('click', function() {
+        window.open('https://github.com/JuJurubeba/APIcrud', '_blank');
+    });
+});
     
     </script>
     
@@ -56,6 +61,22 @@
       .img-port{
         background-image: url(../assets/comp.jpg);
     }
+    .img-port1{
+      width: 360px;
+        height: 460px;
+        background-color: #7ffef5;
+        background-size: cover;
+        background-position: 53% 0%;
+        transition: 5s;
+        cursor: pointer;
+        border-radius: 40px;
+        position: relative;
+        background-image: url(../assets/golang.png);
+        
+
+
+    }
+     
       .portfolio .interface h2 span{
         color: #7ffef5;
       }
